@@ -1,3 +1,8 @@
+"""
+Provides breakdown of yeast ORN population, showing whether
+ORNS separately connect to OviDNs/CA. Also shows number of
+ORNs in the antennal lobe or maxillary palps.
+"""
 import pandas as pd
 import plotly.graph_objects as go
 
@@ -34,5 +39,5 @@ fig.update_layout(
     annotations=[dict(text="", x=0.5, y=0.5, font_size=20, showarrow=False)]
 )
 
-fig.write_image('out/orn_overlap.png')
-# fig.show()
+# fig.write_image('out/orn_overlap.png')
+fig.show()
